@@ -22,7 +22,7 @@ export default {
       title: 'Title Image',
     },
     {
-      name: 'smallDes',
+      name: 'smallDesc',
       type: 'text',
       title: 'Small Description',
     },
