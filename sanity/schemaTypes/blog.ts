@@ -17,12 +17,12 @@ export default {
       },
     },
     {
-      name: 'titleImage',
+      name: 'titleImagine',
       type: 'image',
       title: 'Title Image',
     },
     {
-      name: 'smallDescription',
+      name: 'smallDes',
       type: 'text',
       title: 'Small Description',
     },
