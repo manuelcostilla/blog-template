@@ -51,7 +51,7 @@ async function Blog() {
               {post.title}
             </h3>
             <p className="line-clamp-3 text-balance text-sm text-center mb-2">
-              {post.smallDesc}
+              {post.smallDescription}
             </p>
             <Button className="w-full mt-7" asChild>
               <Link href={`/blog/${post.currentSlug}`}> leer mas</Link>
