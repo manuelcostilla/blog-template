@@ -13,6 +13,8 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
+export const revalidate = 30; // revalida cada casi 30 seg
+
 async function getData() {
   const query = `
   *[_type == 'blog'] | order(_createdAt desc) {
