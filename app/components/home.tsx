@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function HomePageText() {
   return (
@@ -7,7 +8,9 @@ function HomePageText() {
         <p className="text-black text-sm text-balance dark:text-gray-50 ">
           <span className="block text-2xl text-black dark:text-slate-100 dark:font-semibold">
             Hola! soy Manuel Costilla{" "}
-            <span className="dark:text-cyan-200 text-cyan-700 font-bold">Desarrollador Web Fullstack</span>
+            <span className="dark:text-cyan-200 text-cyan-700 font-bold">
+              Desarrollador Web Fullstack
+            </span>
           </span>
           en este blog estaré hablando de temas que me resulten interesantes y
           aportando mi opinión, presentando nuevos proyectos que esté realizando
@@ -17,7 +20,14 @@ function HomePageText() {
             compartir opiniones en mi twitter! ❤️
           </span>
         </p>
-        <Button className="mt-5 w-full text-xl  font-semibold text-black dark:text-white">Conoce más sobre mí</Button>
+        <Button
+          className="mt-5 w-full text-xl  font-semibold text-black dark:text-white"
+          asChild
+        >
+          <Link href="https://manuelcostilla-gamedev-webdev.netlify.app/" target="_blank">
+            Conoce más sobre mí
+          </Link>
+        </Button>
       </div>
     </>
   );
