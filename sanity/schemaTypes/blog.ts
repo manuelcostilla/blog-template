@@ -17,6 +17,12 @@ export default {
       },
     },
     {
+    name: 'tags',
+    type: 'array',
+    title: 'Tags',
+    of: [{type: 'string'}]  
+    },
+    {
       name: 'titleImage',
       type: 'image',
       title: 'Title Image',

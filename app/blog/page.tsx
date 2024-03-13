@@ -1,11 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { simpleBlogCard } from "../lib/interface";
 import { client, urlFor } from "../lib/sanity";
 import Image from "next/image";
@@ -21,9 +14,9 @@ async function getData() {
     title,
       smallDescription,
       "currentSlug": slug.current,
-      titleImage
+      titleImage,
+      tags
   }`;
-
 
   const data = await client.fetch(query);
 
@@ -53,6 +46,7 @@ async function Blog() {
             <p className="line-clamp-3 text-balance text-sm text-center mb-2">
               {post.smallDescription}
             </p>
+            <p>{post.tags}</p>
             <Button className="w-full mt-7" asChild>
               <Link href={`/blog/${post.currentSlug}`}> leer mas</Link>
             </Button>
