@@ -24,7 +24,10 @@ function HomePageText() {
           className="mt-5 w-full text-xl  font-semibold text-black dark:text-white"
           asChild
         >
-          <Link href="https://manuelcostilla-gamedev-webdev.netlify.app/" target="_blank">
+          <Link
+            href="https://manuelcostilla-gamedev-webdev.netlify.app/"
+            target="_blank"
+          >
             Conoce más sobre mí
           </Link>
         </Button>

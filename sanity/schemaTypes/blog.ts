@@ -17,10 +17,10 @@ export default {
       },
     },
     {
-    name: 'tags',
-    type: 'array',
-    title: 'Tags',
-    of: [{type: 'string'}]  
+      name: "tags",
+      title: "Tags",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "tag" }] }],
     },
     {
       name: 'titleImage',
