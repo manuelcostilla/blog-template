@@ -29,7 +29,9 @@ async function Blog() {
 
   return (
     <>
-    <Navigation />
+      <div className="absolute left-0 top-21 mt-5  ">
+        <Navigation />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
         {data.map((post, idx) => (
           <Card key={idx}>

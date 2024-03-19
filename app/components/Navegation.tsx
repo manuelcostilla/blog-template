@@ -28,11 +28,13 @@ async function getAllTags() {
 
 export const revalidate = 60;
 
+React.useState
+
 const Navigation = async () => {
   const tags: Tag[] = await getAllTags();
   console.log(tags, "tags");
   return (
-    <Command>
+    <Command className=" w-[250px] ">
       <CommandInput placeholder="realiza tu busqueda..." />
       <CommandList>
         <CommandEmpty>No hay resultados.</CommandEmpty>
